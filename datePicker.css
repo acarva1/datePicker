@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom right, #d36, #63d);
+	color: white;
+	text-align: center;
+}
+html, body {
+	min-height: 100%;
+}
+body, button, input {
+	font-family: "Calibri";
+}
+.calendarTest > * {
+	display: block;
+}
+.calendarTest .infoDisplay p {
+	display: inline-block;
+	margin: auto 1em;
+}
+.calendarTest table {
+	margin-top: 2em;
+	vertical-align: top;
+	border-collapse: collapse;
+	display: inline-block;
+}
+.calendarTest td {
+	border: thin solid rgba(200,200,200,0.5);
+	padding: 1em;
+	background-color: transparent;
+	text-align: center;
+	transition: 0.2s linear background-color;
+}
+.calendarTest td.unavailable {
+	border: none;
+}
+.calendarTest td:not(.unavailable):hover {
+	background-color: #77a;
+	transition: 0.2s linear background-color;
+	cursor: pointer;
+}
+
+.calendarTest button {
+	cursor: pointer;
+	background: transparent;
+	border: thin solid white;
+	color: white;
+	padding: 0.5em;
+	margin: 1em auto;
+}
+.calendarTest button:active {
+	background-color: #9ac;
+}
+.calendarTest button.anchored {
+	margin: 0;
+	position: fixed;
+	top: 0;
+}
+.calendarTest button.backButton {
+	left: 0;
+}
+.calendarTest button.forwardButton {
+	right: 0;
+}	
+.calendarTest #selectTodayButton {
+	display: block;
+}
+/* hide all the tables initially, except #yearTable (it's the first available option) */
+.calTables div {
+	display: none;
+}
+.calTables div:first-child {
+	display: block;
+}
+.fadeIn {
+	animation: 0.5s linear fadeInAnim;
+}
+@keyframes fadeInAnim {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
