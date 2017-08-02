@@ -1,30 +1,3 @@
-var mockVenArray = [
-	{
-		"name": "Elephant Room",
-		"shortname": "elephant",
-		"address": "315 Congress Ave.",
-		"citySt": "Austin, TX",
-		"website": "http://www.elephantroom.com",
-		"bg": "elephant.gif"
-	},
-	{
-		"name": "III Forks",
-		"shortname": "iiiforks",
-		"address": "111 Lavaca St.",
-		"citySt": "Austin, TX",
-		"website": "https://www.3forks.com/austin",
-		"bg": "iiiforks.jpg"
-	},
-	{
-		"name": "ZACH Theatre",
-		"shortname": "zach",
-		"address": "202 S. Lamar Blvd.",
-		"citySt": "Austin, TX",
-		"website": "http://zachtheatre.org",
-		"bg": "zach.jpg"
-	}
-];
-
 var tables = {
 	"year": document.getElementById("yearTable"),
 	"month": document.getElementById("monthTable"),
