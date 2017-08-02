@@ -11,7 +11,8 @@ var tables = {
 var display = {
 	"date": document.getElementById("dateDisplay"),
 	"time": document.getElementById("timeDisplay"),
-	"duration": document.getElementById("durationDisplay")
+	"duration": document.getElementById("durationDisplay"),
+	"unix": document.getElementById("unixDisplay")
 };
 
 var today = new Date();
@@ -197,6 +198,7 @@ function setInfoDisplay(dateObj) {
 							   dateObj.year;
 	display.time.textContent = reformatDate("hr", dateObj.startHour) + ":" + reformatDate("lz", dateObj.startMin) + " " + dateObj.startPeriod
 	display.duration.textContent = date.duration + " hrs.";
+	display.unix.textContent = date.unix;
 }
 
 function selectDate(dateObj, tableObj) {

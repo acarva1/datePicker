@@ -11,6 +11,11 @@ html, body {
 body, button, input {
 	font-family: "Calibri";
 }
+.calendarTest {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
 .calendarTest > * {
 	display: block;
 }
@@ -53,7 +58,7 @@ body, button, input {
 }
 .calendarTest button.anchored {
 	margin: 0;
-	position: fixed;
+	position: absolute;
 	top: 0;
 }
 .calendarTest button.backButton {

@@ -6,9 +6,10 @@
 </head>
 <body>
 	<div class="calendarTest">
-		<h2>Calendar/Date Picker Test</h2>
+		<h2>Calendar/Date Picker</h2>
 		<div class="infoDisplay">
 			<p>Date: <span id="dateDisplay"></span></p> <p>Time: <span id="timeDisplay"></span></p> <p>Duration: <span id="durationDisplay"></span></p>
+			<p>Unix Timestamp <span id="unixDisplay"></span></p>
 		</div>
 		<div class="calTables">
 			<div id="dateSelections">
@@ -162,7 +163,6 @@
 			</div>
 			<div id="durationSelections">
 				<button class="anchored backButton">Back to time</button>
-				<button class="anchored forwardButton">Ahead to venue</button>
 				<table id="durationTable">
 					<tr><th colspan="7">Duration (hrs.)</th></tr>
 					<tr>
@@ -183,13 +183,6 @@
 						<td>6.5</td>
 						<td>7.0</td>
 					</tr>
-				</table>
-			</div>
-			<div id="venueSelections">
-				<button class="anchored backButton">Back to duration</button>
-				<button class="anchored forwardButton">Ahead to venue</button>
-				<table id="venueTable">
-					<tr><th colspan="4">Venue</th></tr>
 				</table>
 			</div>
 		</div>
